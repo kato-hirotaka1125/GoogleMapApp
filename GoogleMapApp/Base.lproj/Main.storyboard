@@ -16,8 +16,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzY-DG-HeK">
-                                <rect key="frame" x="184" y="598" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="183" y="598" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="getCurrentPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aef-EZ-eob"/>
                                 </connections>
@@ -34,14 +34,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjc-pO-U9c">
+                                <rect key="frame" x="171" y="669" width="72" height="30"/>
+                                <state key="normal" title="Show Map"/>
+                                <connections>
+                                    <action selector="showMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgf-Bu-FCI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="zjc-pO-U9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rx-tH-7L6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s4K-hF-ZYK" secondAttribute="trailing" constant="13" id="8KY-YI-V2N"/>
                             <constraint firstItem="HlS-Um-M15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="LyI-SY-xQo"/>
                             <constraint firstItem="s4K-hF-ZYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="M64-WG-eWM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HlS-Um-M15" secondAttribute="trailing" constant="13" id="QJU-DZ-ItE"/>
+                            <constraint firstItem="zjc-pO-U9c" firstAttribute="top" secondItem="OzY-DG-HeK" secondAttribute="bottom" constant="41" id="dA0-TG-Ovd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s4K-hF-ZYK" secondAttribute="trailing" constant="13" id="eSQ-ae-ocw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zjc-pO-U9c" secondAttribute="bottom" constant="163" id="gIj-91-EIP"/>
                             <constraint firstItem="s4K-hF-ZYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="koO-Iw-ZK7"/>
                             <constraint firstItem="HlS-Um-M15" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="351" id="si1-7t-0rr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OzY-DG-HeK" secondAttribute="bottom" constant="234" id="u5S-Bh-Yt7"/>
